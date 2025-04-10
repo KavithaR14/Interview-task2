@@ -1,0 +1,93 @@
+/* components/JobList.css */
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .job-card {
+    padding: 24px;
+    background: #ffffff;
+    border-left: 6px solid #4CAF50;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  .job-card h3 {
+    margin: 0 0 8px 0;
+    color: #2c3e50;
+    font-size: 20px;
+  }
+  
+  .job-card p {
+    margin: 4px 0;
+    font-size: 15px;
+    color: #555;
+  }
+  
+  .job-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .job-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .job-card select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    background: #f9f9f9;
+    font-size: 14px;
+  }
+  
+  .job-card select:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  .job-card button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  /* Update Button */
+  .update-btn {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    margin-left: 10px;
+  }
+  
+  .update-btn:hover {
+    background-color: #0b7dda;
+    transform: scale(1.03);
+  }
+  
+  /* Delete Button */
+  .job-card button:last-child {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  
+  .job-card button:last-child:hover {
+    background-color: #d32f2f;
+    transform: scale(1.03);
+  }
+  
